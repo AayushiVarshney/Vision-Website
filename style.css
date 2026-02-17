@@ -1,0 +1,148 @@
+img {
+    height:35px;
+    width:120px;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    
+    background-color: #0d0d0d;
+    color: white;
+    line-height: 1.6;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background: rgba(151, 241, 95, 0.8);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+.links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    position:relative;
+    right:-120px;
+}
+.links a {
+    text-decoration : none;
+    color: rgb(239, 238, 242);
+    transition: 0.3s;
+    font-size:25px;
+}
+.hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    padding-top: 80px;
+    background:linear-gradient(rgba(0,0,0,0.55),rgba(0,0,0,0.55)) ,url("/web1.jpg");
+    background-size:auto;
+}
+.hero-content h1 {
+    font-size: 3rem;
+    animation: fadeIn 1.5s ease-in-out;
+    color:#18b3f5;
+}
+.hero-content p {
+    margin: 20px 0;
+    font-size: 1.5rem;
+    opacity: 0.8;
+}
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background: #18f544;
+    color: black;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: 0.3s;
+    font-size:20px;
+}
+.btn:hover {
+    background: rgb(248, 132, 59);
+    transform: scale(1.05);
+}
+.about {
+    padding: 100px 10%;
+    text-align: center;
+    background:linear-gradient(rgba(0,0,0,0.45) , rgba(0,0,0,0.45)) , url("/aboutUsBg\ \(1\).webp");
+}
+.about h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #18b3f5;
+}
+.about p {
+    max-width: 700px;
+    margin: auto;
+    opacity: 0.85;
+}
+
+footer {
+    background:linear-gradient(rgba(0,0,0,0.45) , rgba(0,0,0,0.45)) , url("/ContactUsBg.jpg");
+
+    padding: 40px 10%;
+    text-align: center;
+
+}
+
+.socials {
+    margin: 15px 0;
+}
+
+.socials a {
+    margin: 0 10px;
+    color: #f5189d;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.socials a:hover {
+    color: white;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .links {
+        margin-top: 10px;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .about {
+        padding: 60px 5%;
+    }
+}
+
+a:hover {
+    transform:scale(1.25);
+    color:#faf8f9;
+}
